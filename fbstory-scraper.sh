@@ -1,10 +1,12 @@
 #!/bin/bash
 
-# FB Story Scraper
+# FB Story Media URL Scraper
 # 1. In Chrome: Right click > View Source,
 # 2. Save the html file
 # 3. Use is it as a parameter here
-# 4. Result: returns relevant URLs for extraction
+# 4. Result: returns relevant media URLs for extraction
+#    results could have duplicates or differing resolutions
+#    of the same photo
 
 if [ -z "$1" ]; then
   echo "Usage: $0 <html_file>"
